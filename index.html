@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety me dicament — автоматизация под ключ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0a0a0b;
+            color: #e4e4e7;
+            line-height: 1.6;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        header {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #1f1f23;
+        }
+        header .tag { font-size: 14px; color: #8b5cf6; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+        header h1 {
+            font-size: 48px; font-weight: 800; margin-top: 12px;
+            background: linear-gradient(135deg, #e4e4e7 0%, #a78bfa 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        header p { font-size: 18px; color: #a1a1aa; margin-top: 12px; max-width: 600px; }
+
+        /* Sections */
+        section { padding: 64px 0; border-bottom: 1px solid #1f1f23; }
+        section:last-child { border-bottom: none; }
+        h2 { font-size: 28px; font-weight: 700; margin-bottom: 32px; color: #f4f4f5; }
+        h2 span { color: #8b5cf6; }
+
+        /* Services */
+        .services-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;
+        }
+        .service-card {
+            background: #121214; border: 1px solid #1f1f23; border-radius: 12px; padding: 28px;
+            transition: border-color 0.2s;
+        }
+        .service-card:hover { border-color: #8b5cf6; }
+        .service-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+        .service-card p { font-size: 14px; color: #a1a1aa; }
+
+        /* Cases */
+        .case {
+            background: #121214; border: 1px solid #1f1f23; border-radius: 12px; padding: 32px; margin-bottom: 20px;
+        }
+        .case:last-child { margin-bottom: 0; }
+        .case .badge {
+            display: inline-block; background: #8b5cf624; color: #a78bfa; font-size: 12px; font-weight: 600;
+            padding: 4px 12px; border-radius: 20px; margin-bottom: 12px;
+        }
+        .case h3 { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+        .case .subtitle { font-size: 14px; color: #8b5cf6; font-weight: 500; margin-bottom: 16px; }
+        .case p { font-size: 14px; color: #a1a1aa; margin-bottom: 12px; }
+        .case ul { list-style: none; margin-top: 8px; }
+        .case ul li {
+            font-size: 14px; color: #d4d4d8; padding: 4px 0 4px 20px;
+            position: relative;
+        }
+        .case ul li::before { content: "→"; position: absolute; left: 0; color: #8b5cf6; }
+
+        /* Tech stack */
+        .tech-list {
+            display: flex; flex-wrap: wrap; gap: 10px;
+        }
+        .tech-tag {
+            background: #121214; border: 1px solid #1f1f23; border-radius: 8px;
+            padding: 8px 16px; font-size: 14px; color: #d4d4d8; font-weight: 500;
+        }
+
+        /* About */
+        .about-text { font-size: 15px; color: #a1a1aa; max-width: 700px; }
+
+        /* Contacts */
+        footer {
+            padding: 48px 0 60px; text-align: center;
+        }
+        footer p { color: #a1a1aa; font-size: 15px; margin-bottom: 8px; }
+        footer a {
+            color: #8b5cf6; text-decoration: none; font-weight: 500;
+        }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 32px; }
+            header { padding: 40px 0 28px; }
+            section { padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="tag">Fsociety me dicament</div>
+        <h1>Автоматизация под ключ</h1>
+        <p>Telegram-боты, платёжные интеграции, скрипты любой сложности на Python. Работаю с любыми языками и инструментами — от простого до хардкора.</p>
+    </div>
+</header>
+
+<!-- Services -->
+<section>
+    <div class="container">
+        <h2>Что <span>я делаю</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Telegram-боты</h3>
+                <p>Магазины, автовыдача, поддержка пользователей, уведомления — любой функционал под вашу задачу.</p>
+            </div>
+            <div class="service-card">
+                <h3>Платёжные интеграции</h3>
+                <p>Fanpay, Starvel, Plairok, криптовалюты — приём платежей без головной боли, от деплоя до поддержки.</p>
+            </div>
+            <div class="service-card">
+                <h3>Автоматизация бизнеса</h3>
+                <p>Связки, парсинг, уведомления, отчёты, API — делаю рутину автоматической, а процессы — прозрачными.</p>
+            </div>
+            <div class="service-card">
+                <h3>Скрипты под задачу</h3>
+                <p>Любой язык, любая сложность. Нет готового решения — напишу с нуля.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cases -->
+<section>
+    <div class="container">
+        <h2>Мои <span>проекты</span></h2>
+
+        <div class="case">
+            <span class="badge">запущен</span>
+            <h3>AutoGift — автоматизация аренды Telegram Gift</h3>
+            <div class="subtitle">Python · Telegram Bot API · Fanpay · Starvel</div>
+            <p>Полностью автоматизированная система аренды подарков в Telegram. Приём оплаты через Fanpay и Starvel, аренда подарка через зеркального бота по минимальной цене, выдача клиенту с инструкцией.</p>
+            <ul>
+                <li>Покупатель оплачивает → получает инструкцию → переходит в бота</li>
+                <li>Бот запрашивает Ton Connect / ссылку → авто-аренда в зеркальном боте</li>
+                <li>Выдача готового подарка + инструкция покупателю</li>
+                <li>Отдельный бот уведомляет админа о всех заказах</li>
+                <li>Единый скрипт работает на Fanpay и Starvel через одну схему</li>
+            </ul>
+        </div>
+
+        <div class="case">
+            <span class="badge">разработка</span>
+            <h3>VPN Bot — автовыдача подписок</h3>
+            <div class="subtitle">Python · Telegram Bot API · VPS · WireGuard</div>
+            <p>Бот для автоматической выдачи VPN-подписок. Оплата → генерация конфига → доступ. Проект не был завершён, но наработки есть — полная схема готова к доработке.</p>
+        </div>
+
+        <div class="case">
+            <span class="badge">запущен</span>
+            <h3>Telegram Shop Bot — магазин товаров</h3>
+            <div class="subtitle">Python · Telegram Bot API · Платёжная интеграция</div>
+            <p>Бот-магазин: каталог, корзина, приём платежей, выдача товара после оплаты. Полный цикл продажи в одном боте.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Stack -->
+<section>
+    <div class="container">
+        <h2>Мой <span>стек</span></h2>
+        <div class="tech-list">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Telegram Bot API</span>
+            <span class="tech-tag">Fanpay</span>
+            <span class="tech-tag">Starvel</span>
+            <span class="tech-tag">Plairok</span>
+            <span class="tech-tag">Ton Connect</span>
+            <span class="tech-tag">VPS / Linux</span>
+            <span class="tech-tag">WireGuard</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Git</span>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section>
+    <div class="container">
+        <h2>Обо <span>мне</span></h2>
+        <p class="about-text">
+            Занимаюсь автоматизацией. Работаю с Telegram-ботами, платёжными системами, интеграциями. 
+            Пишу на Python, разбираюсь в VPS, поднимал свой VPN. Умею превращать многошаговую рутину в одну кнопку. 
+            Открыт к любым задачам — от простого скрипта до сложной связки сервисов.
+        </p>
+    </div>
+</section>
+
+<!-- Contacts -->
+<footer>
+    <div class="container">
+        <p>Хотите что-то автоматизировать?</p>
+        <p>Пишите — обсудим, придумаем, сделаем.</p>
+        <p style="margin-top: 20px;">
+            <a href="#">@medic</a>
+        </p>
+        <p style="margin-top: 20px; font-size: 13px; color: #52525b;">
+            Fsociety me dicament
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
